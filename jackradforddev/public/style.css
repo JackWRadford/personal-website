@@ -1,16 +1,10 @@
 body {
     background-color:cornsilk;
 }
-.center {
-    padding: 10px 30px 10px 30px;
-    margin: auto;
-    width: 80%;
-    max-width: 600px;
-}
 p,h1 {
     font-family: monospace;
 }
-h1{
+h1 {
     font-size: 20px;
 }
 p{
@@ -19,6 +13,16 @@ p{
 a{
     font-weight: bold;
     text-decoration: none;
+}
+.appSection {
+    border-bottom: 3px dashed rgb(240, 232, 199);
+    padding-bottom: 45px;
+}
+.center {
+    padding: 10px 30px 10px 30px;
+    margin: auto;
+    width: 80%;
+    max-width: 600px;
 }
 .titleBar, .downloadBar {
     display: flex;
