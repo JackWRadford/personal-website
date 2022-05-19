@@ -1,18 +1,79 @@
+body {
+    background-color:cornsilk;
+}
 .center {
     padding: 10px 30px 10px 30px;
     margin: auto;
     width: 80%;
-    max-width: 500px;
-  }
-
+    max-width: 600px;
+}
 p,h1 {
     font-family: monospace;
 }
 h1{
-    font-size: 18px;
+    font-size: 20px;
+}
+p{
+    font-size: 13px;
 }
 a{
     font-weight: bold;
     text-decoration: none;
 }
+.titleBar, .downloadBar {
+    display: flex;
+}
+@media only screen and (max-width: 600px) {
+    .downloadBar{
+        justify-content: center;
+    }
+    body{
+        text-align: center;
+    }
+    .appImg {
+        margin-top: 30px;
+    }
+    .titleBar {
+        display: inline;
+    }
+}
+.name {
+    flex-grow: 1;
+}
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 8px 4px;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.fa-github {
+    background: #000000;
+    color: white;
+}
+@media only screen and (min-width: 600px) {
+    .appSection {
+        display: flex;
+    }
+    .appImg {
+        margin-left: 30px;
+    }
+}
+#appleBadge {
+    margin-top: 10px;
+}
+#googleBadge {
+    height: 60px;
+}
+
+
 
