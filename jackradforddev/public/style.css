@@ -1,11 +1,15 @@
 body {
-    background-color:cornsilk;
+    margin: 0px;
+    background-color:whitesmoke;
 }
-p,h1 {
+p,h1,h2 {
     font-family: monospace;
 }
 h1 {
     font-size: 20px;
+}
+h2 {
+    font-size: 14px;
 }
 p{
     font-size: 13px;
@@ -15,31 +19,29 @@ a{
     text-decoration: none;
 }
 .appSection {
-    border-bottom: 3px dashed rgb(240, 232, 199);
-    padding-bottom: 45px;
+    background-color: white;
+    padding: 24px;
+    /* border-radius: 34px; */
+    -moz-box-shadow: 0px 1px 5px 0px #c2c2c2;
+    -webkit-box-shadow: 0px 1px 5px 0px #c2c2c2;
+    box-shadow: 0px 1px 24px 0px #c2c2c2;
 }
 .center {
     padding: 10px 30px 10px 30px;
     margin: auto;
     width: 80%;
-    max-width: 600px;
+    max-width: 650px;
 }
-.titleBar, .downloadBar {
+#titleBar {
     display: flex;
+    background-color: white;
+    padding: 10px 30px;
+    -moz-box-shadow: 0px 1px 5px 0px #c2c2c2;
+    -webkit-box-shadow: 0px 1px 5px 0px #c2c2c2;
+    box-shadow: 0px 1px 24px 0px #c2c2c2;
 }
-@media only screen and (max-width: 600px) {
-    .downloadBar{
-        justify-content: center;
-    }
-    body{
-        text-align: center;
-    }
-    .appImg {
-        margin-top: 30px;
-    }
-    .titleBar {
-        display: inline;
-    }
+.downloadBar {
+    display: flex;
 }
 .name {
     flex-grow: 1;
@@ -51,7 +53,7 @@ a{
     text-align: center;
     text-decoration: none;
     margin: 8px 4px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 .fa:hover {
     opacity: 0.7;
@@ -64,12 +66,26 @@ a{
     background: #000000;
     color: white;
 }
+@media only screen and (max-width: 600px) {
+    .appImg {
+        margin-top: 30px;
+    }
+    .imgContainer {
+        display: flex;
+        justify-content: center;
+    }
+}
 @media only screen and (min-width: 600px) {
     .appSection {
         display: flex;
     }
     .appImg {
         margin-left: 30px;
+    }
+}
+@media only screen and (min-width: 900px) {
+    #content {
+        display: flex;
     }
 }
 #appleBadge {
